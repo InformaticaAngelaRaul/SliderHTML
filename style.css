@@ -1,0 +1,73 @@
+/* CAJA PRINCIPAL */
+.sliderBox {
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+        margin-top: 0px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* IMAGENES A MOSTRAR*/
+.sliderImage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sliderImage.nothidden {
+    display: block;
+}
+
+/* FLECHAS DE DESPLAZAMIENTO */
+.arrows {
+    width: 20px;
+    height: 20px;
+    border-bottom: #44b382 6px solid;
+    border-left: #44b382 6px solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.arrows.prev {
+    transform: rotate(45deg);
+    left: 20px;
+}
+
+.arrows.next {
+    transform: rotate(-135deg);
+    right: 20px;
+}
+
+/* POSICIONES DEL SLIDER */
+
+.imagePosition {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.circle {
+    border: #44b382 2px solid;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle.selected {
+    background: #44b382;
+}
+
+
+
+
+
+
+
+
